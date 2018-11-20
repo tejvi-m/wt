@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    localStorage.setItem("bought",[]);
+    localStorage.setItem("cart", []);
+  </script>
+  <style type = "text/css">
+    body{
+      background-color: #cedbdb;
+    }
+
+    div.navbar{
+      background-color: 	#2c2f33;
+      position: fixed;
+      color: #ffffff;
+      width: 150px;
+      height: 700px;
+      padding: 50px;
+      font-size: 20px;
+    }
+
+  div.titlebar{
+    position: fixed;
+    top : 30px;
+    left : 600px;
+    padding: 20px;
+    color: #2c2f33;
+    font-size: 30px;
+    font-family: serif;
+  }
+
+  div.product{
+    position: relative;
+    z-index: -1;
+    background-visibility: 0.3;
+    left: 250px;
+    padding: 80px;
+    top: 100px;
+    height: 450px;
+    width: 650px;
+  }
+  .image{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+
+  .description{
+    position: absolute;
+    top: 200px;
+    left: 700px;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+   background-color: #067c74;
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+#link{
+  text-decoration: none;
+  color: #2c2f33;
+}
+  </style>
+
+</head>
+<body>
+  <div class = "titlebar">
+    <a id = "link" href = "./transactionsuccess.html">LOREM IPSUM</a>
+  </div>
+
+  <div class = "navbar">
+    <br>
+    <br><br>
+    new </br>
+    electronics </br>
+    lorem </br>
+    ipsum </br>
+    lorem </br>
+    ipsum </br>
+
+    </div>
+
+  <div class = "product">
+    <div class = "image">
+    <img id = "hell" src = "./mac.jpeg" height = "450px" width = "630px">
+  </div>
+  <div class = "description">
+    <h3> Macbook Air</h3>
+    <br>
+    13.3 inch<br>intel core i5 </br>8 GB RAM
+    <br><br><br><br>
+    <h4> Rs. <span style="text-decoration:line-through;"> 77,000 </span> 55,000 </h4>
+
+    <input type = "button" id = "buy" value = "Buy"></input>
+    <input type = "button" id = "cart" value = "Add to Cart"></input>
+
+    <script>
+
+          function cart(e){
+            localStorage['bought'] = "Macbook Air"
+            localStorage['prices'] = "55000 + ";
+          }
+
+          function buy(e){
+            localStorage['bought'] = "Macbook Air"
+            localStorage['prices'] = "55000";
+            window.url = "localhost/assignment/buy.html"
+          }
+
+      var b1 = document.getElementById("buy");
+      b1.addEventListener("click", buy);
+      var b2 = document.getElementById("cart");
+      b2.addEventListener("click", cart);
+
+
+
+    </script>
+  </div>
+  </div>
+</body>
+</html>

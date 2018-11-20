@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade In</title>
+	<script type="text/javascript">
+		p1.style.opacity=0.8;
+		function myfunc()
+		{
+			var t1=setInterval(func, 1000);
+			
+		}    
+		p1.style.opacity=mul *0.1;         
+		
+		function onloadfunc()
+		{
+			p1.onclick=myfunc()
+		}
+		clearInterval(t1);
+		mul=1;
+		myfunc();
+	</script>
+</head>
+<body onload="onloadfunc()">
+	<p id="p1" onclick="myfunc()"> <h1>My first</h1> </p>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fakebook</title>
+	<style type="text/css">
+		  #col {
+	  			background-color: blue;
+	  			height: 110px;
+	  			width:1450px;
+  			}
+  			div.absolute {
+			position: absolute;
+			font-family: georgia;
+			font-size:100px;
+			color:white;
+			top:7px;
+			left:500px;
+			}
+			button.uh {
+    		width: 20em;  height: 2em;
+			}
+			.button {
+			    background-color: blue;
+			    border: none;
+			    color: white;
+			    padding: 10px 40px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 16px;
+			    margin: 4px 2px;
+			    cursor: pointer;
+			}
+			div.box {
+		    background-color: white;
+		    width: 300px;
+		    border: 2px solid black;
+		    padding: 5px;
+		    margin: 5px;
+
+			}
+			div.box1 {
+		    background-color: white;
+		    width: 650px;
+		    border: 1px solid black;
+		    padding: 5px;
+		    margin: 5px;
+
+			}
+			.vl {
+		    border-left: 2px solid black;
+		    height: 800px;
+		    position: absolute;
+		    left: 70%;
+		    margin-right: 0px;
+		    top: 467px;
+			}
+			.vl1 {
+		    border-left: 2px solid black;
+		    height: 1150px;
+		    position: absolute;
+		    left: 17%;
+		    margin-right: 0px;
+		    top: 121px;
+			}
+
+	</style>
+	<script type="text/javascript">
+  	function myFunclike() {
+  		if (document.getElementById("like").innerHTML=="Like")
+  			document.getElementById("like").innerHTML="Liked";
+  		else
+  			document.getElementById("like").innerHTML="Like";
+
+		}
+	function myFuncfoll() {
+  		if (document.getElementById("foll").innerHTML=="Follow")
+  			document.getElementById("foll").innerHTML="Following";
+  		else
+  			document.getElementById("foll").innerHTML="Follow";
+
+		}
+	function myFuncmsg() {
+  		prompt("Enter the message you would like to send");
+
+		}
+
+</script>
+</head>
+<body>
+  <section id="col">
+			<p style="position: absolute; font-size: 90px; color:white; top:-80px; left:70px;"> f </p>
+			<p style="position: absolute; font-size: 40px; color:white; top:-2px; right:20px;"> SignUp &nbsp&nbspLogin </p>
+			<div class="absolute">
+			<center>Fakebook</center>
+			</div>
+</section>
+<img align="right" src="try.jpg" width="1200" height="350">
+<br/> <br/>
+<p  style="position: absolute; font-size: 90px; color:white; top:320px; left:280px;"> <button id="like" onclick="myFunclike()">Like</button> <p>
+<p style="position: absolute; font-size: 90px; color:white; top:320px; left:340px;"> <button id="foll"onclick="myFuncfoll()">Follow</button> </p>
+<p style="position: absolute; font-size: 90px; color:white; top:320px; left:410px;"> <button id="uh">Share</button> </p>
+<p style="position: absolute; font-size: 90px; color:white; top:330px; right:130px;"> <button id="uh" class="button" onclick="myFuncmsg()">Send Message</button> </p>
+<p style="position: absolute; font-size: 90px; color:white; top:420px; left:280px;">
+<textarea rows="7" cols="75" placeholder="Write a post...">
+</textarea> </p>
+<div class="vl"> </div>
+<div class="vl1"> </div>
+
+<img src="dp.png" width="170" height="220">
+<p style="font-size:40px;"> SuperDesi </p>
+<a href="#pic"><h2>Photos <br/> <br/> </a><a href="projhtml.html">
+Contact us <br/><br/></a><a href="">
+About <br/><br/></h2></a>
+<div style="position:absolute; top:550px; right:50px; font-size: 20px;" class="box"> <b> Community </b> <br/><a href=""> <img src="invite.png" width="50" height="50">Invite Your Friends <br/><br/></a><a href=""> <img src="like.jpg" width="50" height="50">23534 people like this
+	<br/><br/> </a><a href=""><img src="share.png" width="50" height="50">4325 people follow this <br/> <br/></a><a href=""><img src="face.jpg" width="50" height="50"> Richa Rai and 2 other friends like this </a> </div>
+
+<div style="position:absolute; top:900px; right:50px; font-size: 20px;" class="box"> <b>About </b><br/><a href="">Typically replies within a day <br/><br/></a><a href=""> twitter.in/superdesi
+	<br/><br/> </a><a href="">Community <br/> <br/></a><a href="">Suggest Edits</a> </div>
+
+
+
+<div style="position:absolute; top:650px; left:275px; font-size: 20px;" class="box1"> <a href="">Sukanya Kumar</a> <br/>Great Service! Vast choice and extermely fast delivery. I ordered the book Born a Crime by Trevor Noah, and it was a great read. <br/> Rating:<br/> <img src="star1.png" width="150" height="50"> </div>
+<div style="position:absolute; top:830px; left:275px; font-size: 20px;" class="box1"> <a href="">Superdesi</a> <br/>Meet the team!
+	<br/> <p id="pic" style="position:relative; top:5px; left:150px;"><img src="selfie.jpg" width="400" height="300"></p></div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

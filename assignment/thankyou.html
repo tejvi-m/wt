@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <span style="textalign:center;font-size:50px"> Thank You! </span>
+  <span style="textalign:center;font-size:30px"> Your products are on their way </span>
+  <script>
+  function b(e){
+    console.log('what');
+    var con = window.confirm("are you sure you want to buy these products for <?php echo "Rs.".$sum ?>?");
+    if(con){
+      console.log('products were bought');
+      window.location = './homepage.html';
+    }
+    else{
+      console.log('products were not bought');
+    }
+  }
+    var ele = document.getElementById('buy');
+    ele.addEventListener('click', b);
+  </script>
+
+  
+
+</body>
+</html>
